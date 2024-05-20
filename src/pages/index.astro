@@ -1,7 +1,10 @@
 ---
-import '../styles/global.css';
----
+import "../styles/global.css";
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
+const pageTitle = "home";
+---
 
 <html lang="en">
   <head>
@@ -9,7 +12,7 @@ import '../styles/global.css';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>My Astro Website</title>
+    <title>{pageTitle}</title>
     <style>
       h1 {
         color: rgb(204, 62, 86);
@@ -18,16 +21,12 @@ import '../styles/global.css';
     </style>
   </head>
   <body>
-   
-	<!-- Navigation -->
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-	<a href="/blog/">Blog</a>
-	
-	
 
-    <h1>My Astro Site</h1>
+<Header />
 
-</body>
- 
+    <h1>{pageTitle}</h1>
+    <p>Welcome to my Garden 🪴</p>
+
+        <Footer />
+  </body>
 </html>
