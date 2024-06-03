@@ -1,1 +1,1 @@
-(Netlify Deployment)[https://kats-garden.netlify.app/]
+[Netlify Deployment](https://kats-garden.netlify.app/)
